@@ -1,0 +1,24 @@
+package emailer;
+
+public final class FileName {
+	private static FileName f;
+	private static String file;
+
+	private FileName() {
+	}
+
+	public static FileName getPath() {
+		if (f == null) {
+			f = new FileName();
+		}
+		return f;
+	}
+
+	public static String getFile() {
+		return FileName.file;
+	}
+
+	public static void setPath(String s) {
+		file = s;
+	}
+}

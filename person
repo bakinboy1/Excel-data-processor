@@ -1,0 +1,122 @@
+package emailer;
+
+public class Person {
+	private String state, city, department, title, entryLevel, midLevel, seniorLevel, cityState;
+
+	// default constructor
+	public Person() {
+		state = "State";
+		city = "City";
+
+		department = "Department";
+		title = "Title";
+		entryLevel = "Low";
+		midLevel = "Mid";
+		seniorLevel = "High";
+		cityState = "Location";
+	}
+
+	public Person(String state1, String city1, String department1, String title1, String entryLevel1, String midLevel1,
+			String seniorLevel1, String cityState1) {
+		this.state = state1;
+		this.city = city1;
+
+		this.department = department1;
+		this.title = title1;
+		this.entryLevel = entryLevel1;
+		this.midLevel = midLevel1;
+		this.seniorLevel = seniorLevel1;
+		this.cityState = cityState1;
+	}
+
+	// set State name
+	public void setState(String newState) {
+		this.state = newState;
+	}
+
+	// get State name
+	public String getState() {
+		return state;
+	}
+
+	////////
+	// set City name
+	public void setCity(String newCity) {
+		this.city = newCity;
+	}
+
+	// get City name
+	public String getCity() {
+		return city;
+	}
+
+	/////////
+	// set department
+	public void setDepartment(String newdepartment) {
+		this.department = newdepartment;
+	}
+
+	// get department
+	public String getDepartment() {
+		return department;
+	}
+
+	// set Title
+	public void setTitle(String newTitle) {
+		this.title = newTitle;
+	}
+
+	// get Title
+	public String getTitle() {
+		return title;
+	}
+
+	// set EntryLevel
+	public void setEntryLevel(String newEntryLevel) {
+		this.entryLevel = newEntryLevel;
+	}
+
+	// get EntryLevel
+	public String getEntryLevel() {
+		return entryLevel;
+	}
+
+	// set MidLevel
+	public void setMidLevel(String newMidLevel) {
+		this.midLevel = newMidLevel;
+	}
+
+	// get MidLevel
+	public String getMidLevel() {
+		return midLevel;
+	}
+
+	// set SeniorLevel
+	public void setSeniorLevel(String newSeniorLevel) {
+		this.seniorLevel = newSeniorLevel;
+	}
+
+	// get SeniorLevel
+	public String getSeniorLevel() {
+		return seniorLevel;
+	}
+
+	////////
+	// set CityState name
+	public void setCityState(String newCityState) {
+		this.cityState = newCityState;
+	}
+
+	// get CityState name
+	public String getCityState() {
+		return cityState;
+	}
+
+	// get correct listing
+	@Override
+	public String toString() {
+		return (cityState + ", " + department + ", " + title + ", " + entryLevel + ", " + midLevel + ", " + seniorLevel
+				+ "\n");
+
+	}
+}
