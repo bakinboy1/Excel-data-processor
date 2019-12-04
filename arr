@@ -1,24 +1,26 @@
 package emailer;
 
-public final class FileName {
-	private static FileName f;
-	private static String file;
+import java.util.ArrayList;
 
-	private FileName() {
+public class Arr {
+	// create arraylist instance
+	private static Arr a;
+	private ArrayList<Person> arr = null;
+
+	// create getter unnecessary
+	public Arr() {
+		arr = new ArrayList<Person>();
 	}
 
-	public static FileName getPath() {
-		if (f == null) {
-			f = new FileName();
+	public static Arr getArr() {
+		if (a == null) {
+			a = new Arr();
 		}
-		return f;
+		return a;
 	}
 
-	public static String getFile() {
-		return FileName.file;
+	public ArrayList<Person> getList() {
+		return this.arr;
 	}
 
-	public static void setPath(String s) {
-		file = s;
-	}
 }
